@@ -4,45 +4,45 @@
     <style>
       /* styles for the custom element itself - lowest specificity */
       :host {
-        display: block;
-        
-        @-webkit-keyframes rotate {
-              0% { background-position:   -0px  -0px; }
-             25% { background-position: -256px  -0px; }
-           25.1% { background-position:   -0px -32px; }
-             50% { background-position: -256px -32px; }
-           50.1% { background-position:   -0px -64px; }
-             75% { background-position: -256px -64px; }
-           75.1% { background-position:   -0px -96px; }
-            100% { background-position: -256px -96px; }
-        }
-        @-webkit-keyframes rotate-row2 {
-          from { background-position:   -0px -32px; }
-          to   { background-position: -256px -32px; }
-        }
-        @-webkit-keyframes rotate-row3 {
-          from { background-position:   -0px -64px; }
-          to   { background-position: -256px -64px; }
-        }
-        @-webkit-keyframes rotate-row4 {
-          from { background-position:   -0px -96px; }
-          to   { background-position: -256px -96px; }
-        }
+        display: inline-block;
       }
-      
+
+      @-webkit-keyframes rotate {
+            0% { background-position:   -0px  -0px; }
+           25% { background-position: -256px  -0px; }
+         25.1% { background-position:   -0px -32px; }
+           50% { background-position: -256px -32px; }
+         50.1% { background-position:   -0px -64px; }
+           75% { background-position: -256px -64px; }
+         75.1% { background-position:   -0px -96px; }
+          100% { background-position: -256px -96px; }
+      }
+      @-webkit-keyframes rotate-row2 {
+        from { background-position:   -0px -32px; }
+        to   { background-position: -256px -32px; }
+      }
+      @-webkit-keyframes rotate-row3 {
+        from { background-position:   -0px -64px; }
+        to   { background-position: -256px -64px; }
+      }
+      @-webkit-keyframes rotate-row4 {
+        from { background-position:   -0px -96px; }
+        to   { background-position: -256px -96px; }
+      }
+
       .ship {
         display: inline-block;
-      
+
         width:  32px;
         height: 32px;
-      
+
         -webkit-animation: rotate 2s steps(8,end) 0s infinite normal;
       }
-      
+
       .blue-falcon {
         background-image: url('../images/blue-falcon.png');
       }
-      
+
       .golden-fox {
         background-image: url('../images/golden-fox.png');
       }
@@ -51,7 +51,7 @@
       :host(.different) { }
       */
     </style>
-    <div class="ship {{ship}}"></div>
+    <span class="ship {{ship}}"></span>
   </template>
   <script>
     Polymer('fzc-animated-ship', {
