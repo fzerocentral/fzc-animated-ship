@@ -1,0 +1,12 @@
+{ "name": "fzc-animated-ship"
+, "description": "Animated ship icons from F-Zero Climax"
+, "version": "0.1.0"
+, "keywords": [ "web-components"
+              , "polymer"
+              ]
+, "main": [ "images/blue-falcon.png"
+          , "images/golden-fox.png"
+          , "fzc-animated-ship.html"
+          ]
+, "dependencies": { "polymer": "*"
+                  }
