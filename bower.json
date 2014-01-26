@@ -1,12 +1,28 @@
-{ "name": "fzc-animated-ship"
-, "description": "Animated ship icons from F-Zero Climax"
-, "version": "0.1.0"
-, "keywords": [ "web-components"
-              , "polymer"
-              ]
-, "main": [ "images/blue-falcon.png"
-          , "images/golden-fox.png"
-          , "fzc-animated-ship.html"
-          ]
-, "dependencies": { "polymer": "*"
-                  }
+{
+  "name": "fzc-animated-ship",
+  "description": "Animated ship icons from F-Zero Climax",
+  "version": "0.1.0",
+  "keywords": [
+    "web-components",
+    "polymer"
+  ],
+  "main": [
+    "images/fzc-animated-ship.png"
+    "fzc-animated-ship.html"
+  ],
+  "dependencies": {
+    "polymer": "*"
+  },
+  "homepage": "https://github.com/fzerocentral/fzc-animated-ship",
+  "authors": [
+    "Ricardo Mendes <rokusu@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
