@@ -11,15 +11,18 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <link rel="import" href="bower_components/polymer/polymer.html">
+    <link rel="import" href="bower_components/fzc-animated-ship/fzc-animated-ship.html">
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <h1>Fzc-animated-ship</h1>
-        <p>Polymer element to display an animated F-Zero Climax ship</p>
+        <h1>fzc-animated-ship</h1>
+
+        <p>Polymer element to display an animated F-Zero Climax ship.</p>
 
         <p class="view"><a href="https://github.com/fzerocentral/fzc-animated-ship">View the Project on GitHub <small>fzerocentral/fzc-animated-ship</small></a></p>
-
 
         <ul>
           <li><a href="https://github.com/fzerocentral/fzc-animated-ship/zipball/master">Download <strong>ZIP File</strong></a></li>
@@ -28,10 +31,37 @@
         </ul>
       </header>
       <section>
-        <h1>
-<a name="fzc-animated-ship" class="anchor" href="#fzc-animated-ship"><span class="octicon octicon-link"></span></a>fzc-animated-ship</h1>
+        <h1>
+          <a name="fzc-animated-ship" class="anchor" href="#fzc-animated-ship"><span class="octicon octicon-link"></span></a>fzc-animated-ship</h1>
+          <p>Polymer element to display an animated F-Zero Climax ship</p>
 
-<p>Polymer element to display an animated F-Zero Climax ship</p>
+        <h2>Install</h2>
+
+        <pre>bower install fzc-animated-ship</pre>
+
+        <h2>Usage</h2>
+
+        <p>You should already know how to setup your page to use Polymer elements. If not, <a href="http://www.polymer-project.org/getting-the-code.html">please consult the Polymer project documentation</a>.</p>
+
+        <p>
+          After setting everything up, just include the
+          <code>&lt;fzc-animated-ship&gt;&lt;/fzc-animated-ship&gt;</code>
+          tag, and you should see the following
+          <fzc-animated-ship></fzc-animated-ship> ship.
+        </p>
+
+        <h2>Options</h2>
+        <p>By default a spinning Blue Falcon will be displayed, but you can specify which ship you want by passing the name to the ship attribute.</p>
+        <p>The current available ships are as follows:
+          <ul>
+            <li>
+              <fzc-animated-ship></fzc-animated-ship> Blue Falcon: <code>&lt;fzc-animated-ship ship="blue-falcon"&gt;</code>
+            </li>
+            <li>
+              <fzc-animated-ship ship="golden-fox"></fzc-animated-ship> Golden Fox: <code>&lt;fzc-animated-ship ship="golden-fox"&gt;
+            </li>
+          </ul>
+        </p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/fzerocentral">fzerocentral</a></p>
@@ -39,6 +69,6 @@
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-    
+    <script src="bower_components/platform/platform.js"></script>
   </body>
 </html>

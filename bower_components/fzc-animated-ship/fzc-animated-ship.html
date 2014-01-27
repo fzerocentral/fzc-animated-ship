@@ -1,0 +1,61 @@
+<polymer-element name="fzc-animated-ship"
+                 attributes="ship">
+  <template>
+    <style>
+      /* styles for the custom element itself - lowest specificity */
+      :host {
+        display: inline-block;
+      }
+
+      @-webkit-keyframes rotate {
+            0% { background-position-x:    -0px; }
+          100% { background-position-x: -1024px; }
+      }
+
+      .ship {
+        display: inline-block;
+
+        width:  32px;
+        height: 32px;
+
+        background-repeat: no-repeat;
+        background-image: url('images/fzc-animated-ship.png');
+
+        -webkit-animation: rotate 2s steps(32,end) 0s infinite normal;
+      }
+
+      .blue-falcon {
+        background-position: 0px 0px;
+      }
+
+      .golden-fox {
+        background-position: 0px -32px;
+      }
+
+      /*
+      style if an ancestor has the different class
+      :host(.different) { }
+      */
+    </style>
+    <span class="ship {{ship}}"></span>
+  </template>
+  <script>
+    Polymer('fzc-animated-ship', {
+      ship: 'blue-falcon',
+
+      //applyAuthorStyles: true,
+      //resetStyleInheritance: true,
+
+      // element is fully prepared
+      ready: function(){ },
+      // instance of the element is created
+      created: function() { },
+      // instance was inserted into the document
+      enteredView: function() { },
+      // instance was removed from the document
+      leftView: function() { },
+      // attribute added, removed or updated
+      attributeChanged: function(attrName, oldVal, newVal) { }
+    });
+  </script>
+</polymer-element>
