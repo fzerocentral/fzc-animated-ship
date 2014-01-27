@@ -7,7 +7,7 @@
     "polymer"
   ],
   "main": [
-    "images/fzc-animated-ship.png"
+    "images/fzc-animated-ship.png",
     "fzc-animated-ship.html"
   ],
   "dependencies": {
