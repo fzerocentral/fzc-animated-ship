@@ -1,28 +1,23 @@
 {
   "name": "fzc-animated-ship",
-  "description": "Animated ship icons from F-Zero Climax",
   "version": "1.0.0",
-  "keywords": [
-    "web-components",
-    "polymer"
-  ],
-  "main": [
-    "images/fzc-animated-ship.png",
-    "fzc-animated-ship.html"
-  ],
-  "dependencies": {
-    "polymer": "*"
-  },
   "homepage": "https://github.com/fzerocentral/fzc-animated-ship",
   "authors": [
     "Ricardo Mendes <rokusu@gmail.com>"
   ],
   "license": "MIT",
+  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "resolutions": {
+    "fzc-animated-ship": "~1.0.0"
+  },
+  "dependencies": {
+    "fzc-animated-ship": "~1.0.0"
+  }
 }
