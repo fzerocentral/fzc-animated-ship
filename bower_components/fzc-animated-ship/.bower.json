@@ -33,6 +33,5 @@
   },
   "_source": "git://github.com/fzerocentral/fzc-animated-ship.git",
   "_target": "~1.0.0",
-  "_originalSource": "fzc-animated-ship",
-  "_direct": true
+  "_originalSource": "fzc-animated-ship"
 }

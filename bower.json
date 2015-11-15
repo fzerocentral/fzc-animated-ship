@@ -14,10 +14,11 @@
     "test",
     "tests"
   ],
-  "resolutions": {
+  "dependencies": {
+    "polymer": "polymer/polymer#^0.5.5",
     "fzc-animated-ship": "~1.0.0"
   },
-  "dependencies": {
-    "fzc-animated-ship": "~1.0.0"
+  "resolutions": {
+    "webcomponentsjs": "^0.6.0"
   }
 }
